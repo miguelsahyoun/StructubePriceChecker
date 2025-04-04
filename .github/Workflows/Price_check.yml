@@ -25,4 +25,4 @@ jobs:
 
       - name: Run Price Check Script
         run: |
-          python price_check.py
+          python price_checker.py
