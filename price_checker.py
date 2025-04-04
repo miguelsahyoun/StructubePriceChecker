@@ -10,7 +10,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # Configure Chrome to run headlessly
 chrome_options = Options()
-chrome_options.add_argument("--headless")
+#chrome_options.add_argument("--headless")
 chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("--no-sandbox")
 
