@@ -10,9 +10,11 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # Configure Chrome to run headlessly
 chrome_options = Options()
-#chrome_options.add_argument("--headless")
+chrome_options.add_argument("--headless")
 chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("--no-sandbox")
+# Specify a unique user data directory (e.g., /tmp/chrome-profile-<some unique identifier>)
+chrome_options.add_argument("--user-data-dir=/tmp/chrome-profile-unique")
 
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=chrome_options)
